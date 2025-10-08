@@ -1,0 +1,117 @@
+openapi: 3.0.0
+info:
+  title: Calculator API
+  description: API for calculator operations including basic and advanced arithmetic
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+    description: Local development server
+
+paths:
+  /calculate:
+    post:
+      summary: Perform a calculation
+      description: Performs the specified mathematical operation on the provided operands
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CalculationRequest'
+      responses:
+        '200':
+          description: Calculation result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalculationResponse'
+        '400':
+          description: Invalid input or operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  
+  /history:
+    get:
+      summary: Get calculation history
+      description: Retrieves the history of performed calculations
+      responses:
+        '200':
+          description: List of previous calculations
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HistoryResponse'
+    delete:
+      summary: Clear calculation history
+      description: Clears all previous calculations from history
+      responses:
+        '204':
+          description: History cleared successfully
+
+components:
+  schemas:
+    CalculationRequest:
+      type: object
+      required:
+        - operation
+        - operand1
+      properties:
+        operation:
+          type: string
+          description: Mathematical operation to perform
+          enum: [add, subtract, multiply, divide, power, sqrt, percentage, factorial]
+        operand1:
+          type: string
+          description: First operand (as string to preserve precision)
+          example: "5.123456789"
+        operand2:
+          type: string
+          description: Second operand (as string to preserve precision, optional for unary operations)
+          example: "3.987654321"
+    
+    CalculationResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for this calculation
+        expression:
+          type: string
+          description: The original expression as entered by user
+          example: "5.123456789 + 3.987654321"
+        result:
+          type: string
+          description: The calculated result (as string to preserve precision)
+          example: "9.111111110"
+        operation:
+          type: string
+          enum: [add, subtract, multiply, divide, power, sqrt, percentage, factorial]
+        timestamp:
+          type: string
+          format: date-time
+          description: When the calculation was performed
+    
+    HistoryResponse:
+      type: object
+      properties:
+        calculations:
+          type: array
+          items:
+            $ref: '#/components/schemas/CalculationResponse'
+        total_count:
+          type: integer
+          description: Total number of calculations in history
+    
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+          description: Error message
+          example: "Error: Cannot divide by zero"
+        code:
+          type: string
+          description: Error code
+          example: "DIVISION_BY_ZERO"

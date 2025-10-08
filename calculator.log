@@ -1,0 +1,56 @@
+2025-10-08 08:07:02,282 - Calculator - INFO - Expression calculation: 5 + 3 = 8
+2025-10-08 08:07:06,377 - Calculator - INFO - Expression calculation: 10 * 5 = 50
+2025-10-08 08:07:09,722 - Calculator - ERROR - Expression calculation failed: sqrt(16) - Error: Invalid expression format: sqrt(16)
+2025-10-08 08:07:29,746 - Calculator - INFO - Expression calculation: sqrt(16) = 4
+2025-10-08 08:07:42,408 - Calculator - INFO - Expression calculation: 2 ^ 3 = 8
+2025-10-08 08:07:45,943 - Calculator - ERROR - Expression calculation failed: 10 / 0 - Error: Cannot divide by zero
+2025-10-08 08:07:53,343 - Calculator - INFO - Expression calculation: 5 + 3 = 8
+2025-10-08 08:07:56,794 - Calculator - INFO - Expression calculation: 10 * 4 = 40
+2025-10-08 08:08:26,118 - Calculator - INFO - Calculation: 5 add 3 = 8
+2025-10-08 08:08:39,446 - Calculator - INFO - Calculation: 5 add 3 = 8
+2025-10-08 08:08:39,449 - Calculator - INFO - Calculation: 10 subtract 3 = 7
+2025-10-08 08:08:39,452 - Calculator - INFO - Calculation: 4 multiply 5 = 20
+2025-10-08 08:08:39,457 - Calculator - INFO - Calculation: 10 divide 2 = 5
+2025-10-08 08:08:39,461 - Calculator - ERROR - Calculation Failed: 10 divide 0 - Error: Cannot divide by zero
+2025-10-08 08:08:39,464 - Calculator - ERROR - Calculation Failed: 5 invalid_op 3 - Error: Invalid operation: invalid_op
+2025-10-08 08:08:39,467 - Calculator - ERROR - Calculation Failed: 5 add abc - Error: Invalid number format: abc
+2025-10-08 08:08:39,469 - Calculator - INFO - Expression calculation: 5 + 3 = 8
+2025-10-08 08:08:39,472 - Calculator - INFO - Expression calculation: 10 - 3 = 7
+2025-10-08 08:08:39,475 - Calculator - INFO - Expression calculation: 4 * 5 = 20
+2025-10-08 08:08:39,478 - Calculator - INFO - Expression calculation: 10 / 2 = 5
+2025-10-08 08:08:45,320 - Calculator - INFO - Calculation: 5.123456789 add 3.987654321 = 9.111111110
+2025-10-08 08:08:45,326 - Calculator - INFO - Calculation: 10.5 subtract 3.2 = 7.3
+2025-10-08 08:08:45,330 - Calculator - INFO - Calculation: 4.5 multiply 2.0 = 9.00
+2025-10-08 08:08:45,339 - Calculator - INFO - Calculation: 10.0 divide 2.0 = 5
+2025-10-08 08:08:45,350 - Calculator - INFO - Calculation: 2.0 power 3.0 = 8.000
+2025-10-08 08:08:45,353 - Calculator - INFO - Calculation: 16.0 sqrt  = 4.0
+2025-10-08 08:08:45,356 - Calculator - INFO - Calculation: 20.0 percentage 100.0 = 20.00
+2025-10-08 08:08:45,359 - Calculator - INFO - Calculation: 5 factorial  = 120
+2025-10-08 08:08:45,364 - Calculator - ERROR - Calculation Failed: 10.0 divide 0.0 - Error: Cannot divide by zero
+2025-10-08 08:08:45,368 - Calculator - ERROR - Calculation Failed: 5 invalid_operation 3 - Error: Invalid operation: invalid_operation
+2025-10-08 08:08:45,371 - Calculator - ERROR - Calculation Failed: invalid add 3 - Error: Invalid number format: invalid
+2025-10-08 08:08:49,804 - Calculator - INFO - Calculation: 5.123456789 add 3.987654321 = 9.111111110
+2025-10-08 08:08:49,808 - Calculator - INFO - Calculation: 10.5 subtract 3.2 = 7.3
+2025-10-08 08:08:49,810 - Calculator - INFO - Calculation: 4.5 multiply 2.0 = 9.00
+2025-10-08 08:08:49,813 - Calculator - INFO - Calculation: 10.0 divide 2.0 = 5
+2025-10-08 08:08:49,815 - Calculator - INFO - Calculation: 2.0 power 3.0 = 8.000
+2025-10-08 08:08:49,817 - Calculator - INFO - Calculation: 16.0 sqrt  = 4.0
+2025-10-08 08:08:49,836 - Calculator - INFO - Calculation: 20.0 percentage 100.0 = 20.00
+2025-10-08 08:08:49,847 - Calculator - INFO - Calculation: 5 factorial  = 120
+2025-10-08 08:08:49,851 - Calculator - ERROR - Calculation Failed: 10.0 divide 0.0 - Error: Cannot divide by zero
+2025-10-08 08:08:49,857 - Calculator - ERROR - Calculation Failed: 5 invalid_operation 3 - Error: Invalid operation: invalid_operation
+2025-10-08 08:08:49,867 - Calculator - ERROR - Calculation Failed: invalid add 3 - Error: Invalid number format: invalid
+2025-10-08 08:08:49,876 - Calculator - INFO - Calculation: 5 add 3 = 8
+2025-10-08 08:08:49,882 - Calculator - INFO - Calculation: 10 subtract 3 = 7
+2025-10-08 08:08:49,886 - Calculator - INFO - Calculation: 4 multiply 5 = 20
+2025-10-08 08:08:49,891 - Calculator - INFO - Calculation: 10 divide 2 = 5
+2025-10-08 08:08:49,901 - Calculator - ERROR - Calculation Failed: 10 divide 0 - Error: Cannot divide by zero
+2025-10-08 08:08:49,907 - Calculator - ERROR - Calculation Failed: 5 invalid_op 3 - Error: Invalid operation: invalid_op
+2025-10-08 08:08:49,910 - Calculator - ERROR - Calculation Failed: 5 add abc - Error: Invalid number format: abc
+2025-10-08 08:08:49,916 - Calculator - INFO - Expression calculation: 5 + 3 = 8
+2025-10-08 08:08:49,919 - Calculator - INFO - Expression calculation: 10 - 3 = 7
+2025-10-08 08:08:49,923 - Calculator - INFO - Expression calculation: 4 * 5 = 20
+2025-10-08 08:08:49,926 - Calculator - INFO - Expression calculation: 10 / 2 = 5
+2025-10-08 08:10:09,184 - Calculator - ERROR - Expression calculation failed: 5+5 - Error: Invalid expression format: 5+5
+2025-10-08 08:10:17,650 - Calculator - INFO - Expression calculation: 5 + 5 = 10
+2025-10-08 08:13:17,493 - Calculator - INFO - Expression calculation: 5 + 5 = 10
